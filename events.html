@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fall 2026 event schedule and member registration for the Maverick Math Club.">
+    <title>Maverick Math Club | Events &amp; Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Minnesota State Mavericks retro team sign" width="120" height="120">
+
+        <h1>Events &amp; Registration</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="schedule">
+            <h2>Fall 2026 Schedule</h2>
+
+            <table>
+                <caption>Maverick Math Club events, November&ndash;December 2026</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Nov 5</th>
+                        <td>Puzzle Night: Logic Grids</td>
+                        <td>6:00 PM</td>
+                        <td>Wissink Hall 155</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nov 12</th>
+                        <td>Guest Talk: Math in Cryptography</td>
+                        <td>6:00 PM</td>
+                        <td>Centennial Student Union 202</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nov 19</th>
+                        <td>Integration Bee Practice</td>
+                        <td>6:30 PM</td>
+                        <td>Wissink Hall 155</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nov 26</th>
+                        <td colspan="3">No meeting &ndash; Thanksgiving Break</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dec 3</th>
+                        <td>Putnam Exam Prep Workshop</td>
+                        <td>5:00 PM</td>
+                        <td>Memorial Library 3rd Floor</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dec 10</th>
+                        <td>End-of-Semester Pi(e) Party</td>
+                        <td>6:00 PM</td>
+                        <td>Centennial Student Union 202</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Member Registration</h2>
+            <p>Fields marked with an asterisk (*) are required.</p>
+
+            <form method="post">
+
+                <fieldset>
+                    <legend>Your information</legend>
+
+                    <p>
+                        <label for="fullname">Full name *</label><br>
+                        <input type="text" id="fullname" name="fullname"
+                               required minlength="2" maxlength="60"
+                               autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email *</label><br>
+                        <input type="email" id="email" name="email"
+                               required maxlength="100"
+                               autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone (optional)</label><br>
+                        <input type="tel" id="phone" name="phone"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                               title="Use the format 507-555-0123"
+                               placeholder="507-555-0123"
+                               autocomplete="tel">
+                    </p>
+
+                    <p>
+                        <label for="eventdate">First event you plan to attend *</label><br>
+                        <input type="date" id="eventdate" name="eventdate"
+                               required min="2026-11-05" max="2026-12-10">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership type *</legend>
+                    <input type="radio" id="mem-general" name="membership" value="general" required>
+                    <label for="mem-general">General Member (free)</label><br>
+
+                    <input type="radio" id="mem-active" name="membership" value="active">
+                    <label for="mem-active">Active Member ($10 / semester)</label><br>
+
+                    <input type="radio" id="mem-officer" name="membership" value="officer">
+                    <label for="mem-officer">Officer Candidate</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Areas of interest</legend>
+                    <input type="checkbox" id="int-puzzles" name="interests" value="puzzles">
+                    <label for="int-puzzles">Puzzles &amp; logic</label><br>
+
+                    <input type="checkbox" id="int-competitions" name="interests" value="competitions">
+                    <label for="int-competitions">Competitions</label><br>
+
+                    <input type="checkbox" id="int-tutoring" name="interests" value="tutoring">
+                    <label for="int-tutoring">Peer tutoring</label><br>
+
+                    <input type="checkbox" id="int-coding" name="interests" value="coding">
+                    <label for="int-coding">Math &amp; programming</label>
+                </fieldset>
+
+                <p>
+                    <label for="comments">Comments or questions?</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="50"
+                              maxlength="500"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Register</button>
+                    <button type="reset" aria-label="Clear the registration form">&#10005;</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Before You Come</h2>
+        <ul>
+            <li>Bring a pencil and a calculator.</li>
+            <li>Beginners are always welcome.</li>
+            <li>Questions? <a href="mailto:mathclub@example.edu">Email the officers</a>.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Maverick Math Club &middot; Minnesota State University, Mankato</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
